@@ -1,0 +1,18 @@
+[
+  {
+    "pageName": "main",
+    "outputName": "index",
+    "indexFileName": "index",
+    "path": "src/templates/main",
+    "title": "",
+    "showDefaultTitle": true,
+    "chunks": ["main"]
+  },
+  {
+    "pageName": "onboarding",
+    "outputName": "onboarding",
+    "indexFileName": "index",
+    "path": "src/templates/onboarding",
+    "title": "Onboarding"
+  }
+]

@@ -1,0 +1,23 @@
+# npm
+package-lock.json
+
+# yarn
+.pnp.loader.mjs
+.pnp.cjs
+.yarn/
+yarn.lock
+yarn-error.log
+
+# node_modules
+node_modules
+
+# builded version
+dist
+
+# env file
+.env
+
+#eslint
+.eslintcache
+
+.DS_Store

@@ -1,0 +1,54 @@
+{
+  "packageManager": "yarn@1.22.19",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "name": "webpack-html-client",
+  "scripts": {
+    "lint": "eslint -c configs/.eslintrc.js src/* --fix --no-error-on-unmatched-pattern --cache",
+    "start": "yarn && yarn lint && yarn build && yarn dev",
+    "build": "yarn lint && webpack --mode=production --node-env=production --progress",
+    "build:dev": "yarn lint && webpack --mode=development",
+    "build:prod": "yarn lint && webpack --mode=production --node-env=production",
+    "watch": "yarn lint && webpack --watch",
+    "dev": "yarn lint && webpack serve --magic-html"
+  },
+  "engines": {
+    "node": ">=16.*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.24.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-webpack-plugin": "^3.2.0",
+    "favicons": "^7.0.1",
+    "favicons-webpack-plugin": "^6.0.0-alpha.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "postcss": "^8.4.17",
+    "postcss-loader": "^7.0.1",
+    "prettier": "^2.7.1",
+    "prettier-webpack-plugin": "^1.2.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "reseter.css": "^2.0.0"
+  }
+}
